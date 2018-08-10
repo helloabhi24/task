@@ -24,9 +24,6 @@ g<-aggregate(OS_INT~Year,IInd,FUN = max )
 gg<-aggregate(OS_INT~Year,IInd,FUN = min )
 ggg<-aggregate(OS_INT~Year,IInd,FUN = median )
 gggg<-aggregate(OS_INT~Year,IInd,FUN = mean )
-g1<-c(g,gg,ggg,gggg)
-g<-as.matrix(g)
-barplot(g[,2],names.arg =  g$Year)
 
 
 install.packages("plotly")
